@@ -10,4 +10,4 @@ Below is a list of the included activities and their function.
 
 # __WORKFLOW ACTIVITIES__ #
 
-1. Create Price List Items
+1. [Create Price List Items](https://github.com/RAMCO-AMS/RAMCO-Workflow-Activities/blob/596ad68b8d28c50dfc68b24490ede0a4b735da0e/Documentation/Create%20Price%20List%20Items.md "Create Price List Items")
