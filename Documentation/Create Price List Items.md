@@ -1,7 +1,3 @@
 This activity is located here:
 
 ![.](/Documentation/Images/price%20list%20activity.png)
-
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-![](Force%20Calculate%20Rollup%20Field_workflow4.gif)
