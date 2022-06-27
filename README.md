@@ -7,3 +7,7 @@ If you would like to have this solution installed in your organization you must 
 For issues related to this solution please submit an issue here of submit a ticket to RAMCO Support.
 
 Below is a list of the included activities and their function.
+
+# __WORKFLOW ACTIVITIES__ #
+
+1. Create Price List Items
