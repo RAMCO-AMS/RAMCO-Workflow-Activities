@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseWorkflow.cs" />
+    <Compile Include="FindAndReplace.cs" />
+    <Compile Include="NumberStringToInt.cs" />
+    <Compile Include="IntToString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CreatePriceListItems.cs" />
   </ItemGroup>

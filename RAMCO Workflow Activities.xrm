@@ -58,6 +58,22 @@
               "RelativeFilePath": "BaseWorkflow.cs",
               "Name": "BaseWorkflow.cs",
               "CrmId": "00000000-0000-0000-0000-000000000000"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.PluginTypeFile, SS.XrmToolkit.Common",
+              "PluginClassType": 2,
+              "ProgrammingLanguage": 1,
+              "RelativeFilePath": "FindAndReplace.cs",
+              "Name": "FindAndReplace.cs",
+              "CrmId": "00000000-0000-0000-0000-000000000000"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.PluginTypeFile, SS.XrmToolkit.Common",
+              "PluginClassType": 2,
+              "ProgrammingLanguage": 1,
+              "RelativeFilePath": "IntToString.cs",
+              "Name": "IntToString.cs",
+              "CrmId": "00000000-0000-0000-0000-000000000000"
             }
           ],
           "ProjectSettings": {
@@ -91,7 +107,115 @@
                   "LogicalName": "plugintype",
                   "PluginClassType": 2,
                   "ConfigurationIsSupplied": true,
-                  "Id": "00000000-0000-0000-0000-000000000000",
+                  "Id": "5c2fc327-ae12-ed11-9c92-00155d630f03",
+                  "Attributes": [
+                    {
+                      "Key": "name",
+                      "Value": " Integer to String"
+                    },
+                    {
+                      "Key": "friendlyname",
+                      "Value": " Integer to String"
+                    },
+                    {
+                      "Key": "typename",
+                      "Value": "RAMCO_Workflow_Activities.Plugins.IntToString"
+                    },
+                    {
+                      "Key": "workflowactivitygroupname",
+                      "Value": "RAMCO: Conversion"
+                    },
+                    {
+                      "Key": "customizationlevel",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "pluginassemblyid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"8cecd5d4-ad12-ed11-9c92-00155d630f03"},"LogicalName":"pluginassembly","Name":"RAMCO Workflow Activities.Plugins","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "minor",
+                      "Value": {"$type":"System.Int32","$value":0}
+                    },
+                    {
+                      "Key": "ismanaged",
+                      "Value": {"$type":"System.Boolean","$value":false}
+                    },
+                    {
+                      "Key": "customworkflowactivityinfo",
+                      "Value": "\u003c?xml version=\u00221.0\u0022 encoding=\u0022utf-16\u0022?\u003e\r\n\u003cSandboxCustomActivityInfo xmlns:xsd=\u0022http://www.w3.org/2001/XMLSchema\u0022 xmlns:xsi=\u0022http://www.w3.org/2001/XMLSchema-instance\u0022\u003e\r\n  \u003cCustomActivityInfo\u003e\r\n    \u003cName\u003e Integer to String\u003c/Name\u003e\r\n    \u003cPluginTypeId\u003e5c2fc327-ae12-ed11-9c92-00155d630f03\u003c/PluginTypeId\u003e\r\n    \u003cGroupName\u003eRAMCO: Conversion\u003c/GroupName\u003e\r\n    \u003cIsNet4\u003etrue\u003c/IsNet4\u003e\r\n    \u003cTypeName\u003eRAMCO_Workflow_Activities.Plugins.IntToString\u003c/TypeName\u003e\r\n    \u003cAssemblyName\u003eRAMCO Workflow Activities.Plugins\u003c/AssemblyName\u003e\r\n    \u003cPublicKeyToken\u003efc30d9e95b069816\u003c/PublicKeyToken\u003e\r\n    \u003cCulture\u003eneutral\u003c/Culture\u003e\r\n    \u003cAssemblyVersion\u003e1.0.8249.30464\u003c/AssemblyVersion\u003e\r\n  \u003c/CustomActivityInfo\u003e\r\n  \u003cInputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eWhole Number to be Converted\u003c/Name\u003e\r\n      \u003cTypeName\u003eMicrosoft.Crm.Sdk.CrmNumber, Microsoft.Crm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eIntReference\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Inputs\u003e\r\n  \u003cOutputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eNumber as string\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003efalse\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eOutputString\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Outputs\u003e\r\n  \u003cAssemblyQualifiedName\u003eRAMCO_Workflow_Activities.Plugins.IntToString, RAMCO Workflow Activities.Plugins, Version=1.0.8249.30464, Culture=neutral, PublicKeyToken=fc30d9e95b069816\u003c/AssemblyQualifiedName\u003e\r\n  \u003cValidationError /\u003e\r\n\u003c/SandboxCustomActivityInfo\u003e"
+                    },
+                    {
+                      "Key": "modifiedon",
+                      "Value": "2022-08-02T21:57:54Z"
+                    },
+                    {
+                      "Key": "assemblyname",
+                      "Value": "RAMCO Workflow Activities.Plugins"
+                    },
+                    {
+                      "Key": "plugintypeid",
+                      "Value": {"$type":"System.Guid","$value":"5c2fc327-ae12-ed11-9c92-00155d630f03"}
+                    },
+                    {
+                      "Key": "organizationid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"ea7fb871-34b0-ec11-9c84-00155d630f03"},"LogicalName":"organization","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "isworkflowactivity",
+                      "Value": {"$type":"System.Boolean","$value":true}
+                    },
+                    {
+                      "Key": "createdby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "plugintypeidunique",
+                      "Value": {"$type":"System.Guid","$value":"e0d78a02-f802-4869-9433-5dc0fac29796"}
+                    },
+                    {
+                      "Key": "componentstate",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.OptionSetValue, Microsoft.Xrm.Sdk","Value":{"$type":"System.Int32","$value":0}}
+                    },
+                    {
+                      "Key": "major",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "publickeytoken",
+                      "Value": "fc30d9e95b069816"
+                    },
+                    {
+                      "Key": "culture",
+                      "Value": "neutral"
+                    },
+                    {
+                      "Key": "modifiedby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "version",
+                      "Value": "1.0.8249.30464"
+                    },
+                    {
+                      "Key": "solutionid",
+                      "Value": {"$type":"System.Guid","$value":"fd140aae-4df4-11dd-bd17-0019b9312238"}
+                    },
+                    {
+                      "Key": "createdon",
+                      "Value": "2022-08-02T21:57:54Z"
+                    }
+                  ],
+                  "FormattedValues": [],
+                  "RelatedEntities": [],
+                  "KeyAttributes": []
+                },
+                {
+                  "_steps": [],
+                  "LogicalName": "plugintype",
+                  "PluginClassType": 2,
+                  "ConfigurationIsSupplied": true,
+                  "Id": "8e9e412e-ae12-ed11-9c92-00155d630f03",
                   "Attributes": [
                     {
                       "Key": "name",
@@ -115,7 +239,295 @@
                     },
                     {
                       "Key": "pluginassemblyid",
-                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"fd57ad4d-2cf6-ec11-9c91-00155d630f03"},"LogicalName":"pluginassembly","KeyAttributes":[]}
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"8cecd5d4-ad12-ed11-9c92-00155d630f03"},"LogicalName":"pluginassembly","Name":"RAMCO Workflow Activities.Plugins","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "minor",
+                      "Value": {"$type":"System.Int32","$value":0}
+                    },
+                    {
+                      "Key": "ismanaged",
+                      "Value": {"$type":"System.Boolean","$value":false}
+                    },
+                    {
+                      "Key": "customworkflowactivityinfo",
+                      "Value": "\u003c?xml version=\u00221.0\u0022 encoding=\u0022utf-16\u0022?\u003e\r\n\u003cSandboxCustomActivityInfo xmlns:xsd=\u0022http://www.w3.org/2001/XMLSchema\u0022 xmlns:xsi=\u0022http://www.w3.org/2001/XMLSchema-instance\u0022\u003e\r\n  \u003cCustomActivityInfo\u003e\r\n    \u003cName\u003e Create Price List Items\u003c/Name\u003e\r\n    \u003cPluginTypeId\u003e8e9e412e-ae12-ed11-9c92-00155d630f03\u003c/PluginTypeId\u003e\r\n    \u003cGroupName\u003eRAMCO: Products\u003c/GroupName\u003e\r\n    \u003cIsNet4\u003etrue\u003c/IsNet4\u003e\r\n    \u003cTypeName\u003eRAMCO_Workflow_Activities.Plugins.CreatePriceListItems\u003c/TypeName\u003e\r\n    \u003cAssemblyName\u003eRAMCO Workflow Activities.Plugins\u003c/AssemblyName\u003e\r\n    \u003cPublicKeyToken\u003efc30d9e95b069816\u003c/PublicKeyToken\u003e\r\n    \u003cCulture\u003eneutral\u003c/Culture\u003e\r\n    \u003cAssemblyVersion\u003e1.0.8249.30464\u003c/AssemblyVersion\u003e\r\n  \u003c/CustomActivityInfo\u003e\r\n  \u003cInputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eProduct\u003c/Name\u003e\r\n      \u003cTypeName\u003eMicrosoft.Crm.Sdk.Lookup, Microsoft.Crm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eProduct\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames\u003e\r\n        \u003cstring\u003eproduct\u003c/string\u003e\r\n      \u003c/EntityNames\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003ePrice\u003c/Name\u003e\r\n      \u003cTypeName\u003eMicrosoft.Crm.Sdk.CrmMoney, Microsoft.Crm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003ePrice\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Inputs\u003e\r\n  \u003cOutputs /\u003e\r\n  \u003cAssemblyQualifiedName\u003eRAMCO_Workflow_Activities.Plugins.CreatePriceListItems, RAMCO Workflow Activities.Plugins, Version=1.0.8249.30464, Culture=neutral, PublicKeyToken=fc30d9e95b069816\u003c/AssemblyQualifiedName\u003e\r\n  \u003cValidationError /\u003e\r\n\u003c/SandboxCustomActivityInfo\u003e"
+                    },
+                    {
+                      "Key": "modifiedon",
+                      "Value": "2022-08-02T21:58:07Z"
+                    },
+                    {
+                      "Key": "assemblyname",
+                      "Value": "RAMCO Workflow Activities.Plugins"
+                    },
+                    {
+                      "Key": "plugintypeid",
+                      "Value": {"$type":"System.Guid","$value":"8e9e412e-ae12-ed11-9c92-00155d630f03"}
+                    },
+                    {
+                      "Key": "organizationid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"ea7fb871-34b0-ec11-9c84-00155d630f03"},"LogicalName":"organization","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "isworkflowactivity",
+                      "Value": {"$type":"System.Boolean","$value":true}
+                    },
+                    {
+                      "Key": "createdby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "plugintypeidunique",
+                      "Value": {"$type":"System.Guid","$value":"9b1118c4-0c09-4fd6-b885-e558afcb6767"}
+                    },
+                    {
+                      "Key": "componentstate",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.OptionSetValue, Microsoft.Xrm.Sdk","Value":{"$type":"System.Int32","$value":0}}
+                    },
+                    {
+                      "Key": "major",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "publickeytoken",
+                      "Value": "fc30d9e95b069816"
+                    },
+                    {
+                      "Key": "culture",
+                      "Value": "neutral"
+                    },
+                    {
+                      "Key": "modifiedby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "version",
+                      "Value": "1.0.8249.30464"
+                    },
+                    {
+                      "Key": "solutionid",
+                      "Value": {"$type":"System.Guid","$value":"fd140aae-4df4-11dd-bd17-0019b9312238"}
+                    },
+                    {
+                      "Key": "createdon",
+                      "Value": "2022-08-02T21:58:07Z"
+                    }
+                  ],
+                  "FormattedValues": [],
+                  "RelatedEntities": [],
+                  "KeyAttributes": []
+                },
+                {
+                  "_steps": [],
+                  "LogicalName": "plugintype",
+                  "PluginClassType": 2,
+                  "ConfigurationIsSupplied": true,
+                  "Id": "8d9e412e-ae12-ed11-9c92-00155d630f03",
+                  "Attributes": [
+                    {
+                      "Key": "name",
+                      "Value": " Find and Replace"
+                    },
+                    {
+                      "Key": "friendlyname",
+                      "Value": " Find and Replace"
+                    },
+                    {
+                      "Key": "typename",
+                      "Value": "RAMCO_Workflow_Activities.Plugins.FindAndReplace"
+                    },
+                    {
+                      "Key": "workflowactivitygroupname",
+                      "Value": "RAMCO: String Functions"
+                    },
+                    {
+                      "Key": "customizationlevel",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "pluginassemblyid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"8cecd5d4-ad12-ed11-9c92-00155d630f03"},"LogicalName":"pluginassembly","Name":"RAMCO Workflow Activities.Plugins","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "minor",
+                      "Value": {"$type":"System.Int32","$value":0}
+                    },
+                    {
+                      "Key": "ismanaged",
+                      "Value": {"$type":"System.Boolean","$value":false}
+                    },
+                    {
+                      "Key": "customworkflowactivityinfo",
+                      "Value": "\u003c?xml version=\u00221.0\u0022 encoding=\u0022utf-16\u0022?\u003e\r\n\u003cSandboxCustomActivityInfo xmlns:xsd=\u0022http://www.w3.org/2001/XMLSchema\u0022 xmlns:xsi=\u0022http://www.w3.org/2001/XMLSchema-instance\u0022\u003e\r\n  \u003cCustomActivityInfo\u003e\r\n    \u003cName\u003e Find and Replace\u003c/Name\u003e\r\n    \u003cPluginTypeId\u003e8d9e412e-ae12-ed11-9c92-00155d630f03\u003c/PluginTypeId\u003e\r\n    \u003cGroupName\u003eRAMCO: String Functions\u003c/GroupName\u003e\r\n    \u003cIsNet4\u003etrue\u003c/IsNet4\u003e\r\n    \u003cTypeName\u003eRAMCO_Workflow_Activities.Plugins.FindAndReplace\u003c/TypeName\u003e\r\n    \u003cAssemblyName\u003eRAMCO Workflow Activities.Plugins\u003c/AssemblyName\u003e\r\n    \u003cPublicKeyToken\u003efc30d9e95b069816\u003c/PublicKeyToken\u003e\r\n    \u003cCulture\u003eneutral\u003c/Culture\u003e\r\n    \u003cAssemblyVersion\u003e1.0.8249.30464\u003c/AssemblyVersion\u003e\r\n  \u003c/CustomActivityInfo\u003e\r\n  \u003cInputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eFind\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eFindString\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eReplace\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eReplaceString\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eSeed String\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eSeedString\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Inputs\u003e\r\n  \u003cOutputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eReplaced String\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eOutString\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Outputs\u003e\r\n  \u003cAssemblyQualifiedName\u003eRAMCO_Workflow_Activities.Plugins.FindAndReplace, RAMCO Workflow Activities.Plugins, Version=1.0.8249.30464, Culture=neutral, PublicKeyToken=fc30d9e95b069816\u003c/AssemblyQualifiedName\u003e\r\n  \u003cValidationError /\u003e\r\n\u003c/SandboxCustomActivityInfo\u003e"
+                    },
+                    {
+                      "Key": "modifiedon",
+                      "Value": "2022-08-02T21:58:03Z"
+                    },
+                    {
+                      "Key": "assemblyname",
+                      "Value": "RAMCO Workflow Activities.Plugins"
+                    },
+                    {
+                      "Key": "plugintypeid",
+                      "Value": {"$type":"System.Guid","$value":"8d9e412e-ae12-ed11-9c92-00155d630f03"}
+                    },
+                    {
+                      "Key": "organizationid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"ea7fb871-34b0-ec11-9c84-00155d630f03"},"LogicalName":"organization","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "isworkflowactivity",
+                      "Value": {"$type":"System.Boolean","$value":true}
+                    },
+                    {
+                      "Key": "createdby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "plugintypeidunique",
+                      "Value": {"$type":"System.Guid","$value":"70e3f384-6e25-4e24-bef1-fbbc0867b854"}
+                    },
+                    {
+                      "Key": "componentstate",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.OptionSetValue, Microsoft.Xrm.Sdk","Value":{"$type":"System.Int32","$value":0}}
+                    },
+                    {
+                      "Key": "major",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "publickeytoken",
+                      "Value": "fc30d9e95b069816"
+                    },
+                    {
+                      "Key": "culture",
+                      "Value": "neutral"
+                    },
+                    {
+                      "Key": "modifiedby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "version",
+                      "Value": "1.0.8249.30464"
+                    },
+                    {
+                      "Key": "solutionid",
+                      "Value": {"$type":"System.Guid","$value":"fd140aae-4df4-11dd-bd17-0019b9312238"}
+                    },
+                    {
+                      "Key": "createdon",
+                      "Value": "2022-08-02T21:58:03Z"
+                    }
+                  ],
+                  "FormattedValues": [],
+                  "RelatedEntities": [],
+                  "KeyAttributes": []
+                },
+                {
+                  "_steps": [],
+                  "LogicalName": "plugintype",
+                  "PluginClassType": 2,
+                  "ConfigurationIsSupplied": true,
+                  "Id": "5d2fc327-ae12-ed11-9c92-00155d630f03",
+                  "Attributes": [
+                    {
+                      "Key": "name",
+                      "Value": " Number String to Integer"
+                    },
+                    {
+                      "Key": "friendlyname",
+                      "Value": " Number String to Integer"
+                    },
+                    {
+                      "Key": "typename",
+                      "Value": "RAMCO_Workflow_Activities.Plugins.NumberStringToInt"
+                    },
+                    {
+                      "Key": "workflowactivitygroupname",
+                      "Value": "RAMCO: Conversion"
+                    },
+                    {
+                      "Key": "customizationlevel",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "pluginassemblyid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"8cecd5d4-ad12-ed11-9c92-00155d630f03"},"LogicalName":"pluginassembly","Name":"RAMCO Workflow Activities.Plugins","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "minor",
+                      "Value": {"$type":"System.Int32","$value":0}
+                    },
+                    {
+                      "Key": "ismanaged",
+                      "Value": {"$type":"System.Boolean","$value":false}
+                    },
+                    {
+                      "Key": "customworkflowactivityinfo",
+                      "Value": "\u003c?xml version=\u00221.0\u0022 encoding=\u0022utf-16\u0022?\u003e\r\n\u003cSandboxCustomActivityInfo xmlns:xsd=\u0022http://www.w3.org/2001/XMLSchema\u0022 xmlns:xsi=\u0022http://www.w3.org/2001/XMLSchema-instance\u0022\u003e\r\n  \u003cCustomActivityInfo\u003e\r\n    \u003cName\u003e Number String to Integer\u003c/Name\u003e\r\n    \u003cPluginTypeId\u003e5d2fc327-ae12-ed11-9c92-00155d630f03\u003c/PluginTypeId\u003e\r\n    \u003cGroupName\u003eRAMCO: Conversion\u003c/GroupName\u003e\r\n    \u003cIsNet4\u003etrue\u003c/IsNet4\u003e\r\n    \u003cTypeName\u003eRAMCO_Workflow_Activities.Plugins.NumberStringToInt\u003c/TypeName\u003e\r\n    \u003cAssemblyName\u003eRAMCO Workflow Activities.Plugins\u003c/AssemblyName\u003e\r\n    \u003cPublicKeyToken\u003efc30d9e95b069816\u003c/PublicKeyToken\u003e\r\n    \u003cCulture\u003eneutral\u003c/Culture\u003e\r\n    \u003cAssemblyVersion\u003e1.0.8249.30464\u003c/AssemblyVersion\u003e\r\n  \u003c/CustomActivityInfo\u003e\r\n  \u003cInputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eString to become a Number\u003c/Name\u003e\r\n      \u003cTypeName\u003eSystem.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003etrue\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eStringReference\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Inputs\u003e\r\n  \u003cOutputs\u003e\r\n    \u003cCustomActivityParameterInfo\u003e\r\n      \u003cName\u003eString as Number\u003c/Name\u003e\r\n      \u003cTypeName\u003eMicrosoft.Crm.Sdk.CrmNumber, Microsoft.Crm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\u003c/TypeName\u003e\r\n      \u003cIsInOutArgument\u003efalse\u003c/IsInOutArgument\u003e\r\n      \u003cWorkflowAttributeType\u003eBoolean\u003c/WorkflowAttributeType\u003e\r\n      \u003cRequired\u003efalse\u003c/Required\u003e\r\n      \u003cDependencyPropertyName\u003eOutputInt\u003c/DependencyPropertyName\u003e\r\n      \u003cEntityNames /\u003e\r\n      \u003cIdentifierDefinition xsi:nil=\u0022true\u0022 /\u003e\r\n    \u003c/CustomActivityParameterInfo\u003e\r\n  \u003c/Outputs\u003e\r\n  \u003cAssemblyQualifiedName\u003eRAMCO_Workflow_Activities.Plugins.NumberStringToInt, RAMCO Workflow Activities.Plugins, Version=1.0.8249.30464, Culture=neutral, PublicKeyToken=fc30d9e95b069816\u003c/AssemblyQualifiedName\u003e\r\n  \u003cValidationError /\u003e\r\n\u003c/SandboxCustomActivityInfo\u003e"
+                    },
+                    {
+                      "Key": "modifiedon",
+                      "Value": "2022-08-02T21:57:59Z"
+                    },
+                    {
+                      "Key": "assemblyname",
+                      "Value": "RAMCO Workflow Activities.Plugins"
+                    },
+                    {
+                      "Key": "plugintypeid",
+                      "Value": {"$type":"System.Guid","$value":"5d2fc327-ae12-ed11-9c92-00155d630f03"}
+                    },
+                    {
+                      "Key": "organizationid",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"ea7fb871-34b0-ec11-9c84-00155d630f03"},"LogicalName":"organization","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "isworkflowactivity",
+                      "Value": {"$type":"System.Boolean","$value":true}
+                    },
+                    {
+                      "Key": "createdby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "plugintypeidunique",
+                      "Value": {"$type":"System.Guid","$value":"5eba2c92-55df-4932-afca-dc563185c4c9"}
+                    },
+                    {
+                      "Key": "componentstate",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.OptionSetValue, Microsoft.Xrm.Sdk","Value":{"$type":"System.Int32","$value":0}}
+                    },
+                    {
+                      "Key": "major",
+                      "Value": {"$type":"System.Int32","$value":1}
+                    },
+                    {
+                      "Key": "publickeytoken",
+                      "Value": "fc30d9e95b069816"
+                    },
+                    {
+                      "Key": "culture",
+                      "Value": "neutral"
+                    },
+                    {
+                      "Key": "modifiedby",
+                      "Value": {"$type":"Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk","Id":{"$type":"System.Guid","$value":"78b0c700-05c5-ea11-9c4a-00155d630e0d"},"LogicalName":"systemuser","Name":"Lopez, Reggie","KeyAttributes":[]}
+                    },
+                    {
+                      "Key": "version",
+                      "Value": "1.0.8249.30464"
+                    },
+                    {
+                      "Key": "solutionid",
+                      "Value": {"$type":"System.Guid","$value":"fd140aae-4df4-11dd-bd17-0019b9312238"}
+                    },
+                    {
+                      "Key": "createdon",
+                      "Value": "2022-08-02T21:57:59Z"
                     }
                   ],
                   "FormattedValues": [],
@@ -124,7 +536,7 @@
                 }
               ],
               "LogicalName": "pluginassembly",
-              "Id": "fd57ad4d-2cf6-ec11-9c91-00155d630f03",
+              "Id": "8cecd5d4-ad12-ed11-9c92-00155d630f03",
               "Attributes": [
                 {
                   "Key": "isolationmode",
@@ -143,16 +555,28 @@
                   "Value": "RAMCO Workflow Activities.Plugins"
                 },
                 {
-                  "Key": "version",
-                  "Value": "1.0.8213.18284"
+                  "Key": "modifiedon",
+                  "Value": "2022-08-02T21:55:33Z"
+                },
+                {
+                  "Key": "createdon",
+                  "Value": "2022-08-02T21:55:33Z"
                 },
                 {
                   "Key": "publickeytoken",
-                  "Value": "?0??[\u0006?\u0016"
+                  "Value": "fc30d9e95b069816"
                 },
                 {
-                  "Key": "content",
-                  "Value": "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MQBEYXRhQ29sbGVjdGlvbmAxAElFbnVtZXJhdG9yYDEASW5Bcmd1bWVudGAxADxNb2R1bGU+AG1zY29ybGliAFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAGdldF9JZABnZXRfQ29ycmVsYXRpb25JZABnZXRfVXNlcklkAGdldF9Jbml0aWF0aW5nVXNlcklkAEd1aWQAPFByaWNlPmtfX0JhY2tpbmdGaWVsZAA8VHJhY2luZ1NlcnZpY2U+a19fQmFja2luZ0ZpZWxkADxPcmdhbml6YXRpb25TZXJ2aWNlPmtfX0JhY2tpbmdGaWVsZAA8UHJvZHVjdD5rX19CYWNraW5nRmllbGQAPENybUNvbnRleHQ+a19fQmFja2luZ0ZpZWxkADxXb3JrZmxvd0NvbnRleHQ+a19fQmFja2luZ0ZpZWxkADxDb2RlQWN0aXZpdHlDb250ZXh0PmtfX0JhY2tpbmdGaWVsZAA8U2VydmljZUZhY3Rvcnk+a19fQmFja2luZ0ZpZWxkAElzTnVsbE9yV2hpdGVTcGFjZQBUcmFjZQBnZXRfUHJpY2UAc2V0X1ByaWNlAElUcmFjaW5nU2VydmljZQBnZXRfVHJhY2luZ1NlcnZpY2UAc2V0X1RyYWNpbmdTZXJ2aWNlAElPcmdhbml6YXRpb25TZXJ2aWNlAGdldF9Pcmdhbml6YXRpb25TZXJ2aWNlAHNldF9Pcmdhbml6YXRpb25TZXJ2aWNlAENyZWF0ZU9yZ2FuaXphdGlvblNlcnZpY2UAVG9FbnRpdHlSZWZlcmVuY2UAbWVzc2FnZQBFbnVtZXJhYmxlAElEaXNwb3NhYmxlAFJldHJpZXZlTXVsdGlwbGUAc2V0X0VudGl0eU5hbWUAU3lzdGVtLkNvcmUAZ2V0X0ludmFyaWFudEN1bHR1cmUAUXVlcnlCYXNlAERpc3Bvc2UAQ3JlYXRlAERlYnVnZ2VyQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUAR3VpZEF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAERlYnVnZ2VyQnJvd3NhYmxlQXR0cmlidXRlAENvbVZpc2libGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAUmVmZXJlbmNlVGFyZ2V0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFJlcXVpcmVkQXJndW1lbnRBdHRyaWJ1dGUASW5wdXRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBNaWNyb3NvZnQuWHJtLlNkawBFeGVjdXRlSW50ZXJuYWwAU3lzdGVtLkNvbGxlY3Rpb25zLk9iamVjdE1vZGVsAFJBTUNPIFdvcmtmbG93IEFjdGl2aXRpZXMuUGx1Z2lucy5kbGwAc2V0X0l0ZW0AU3lzdGVtAEdldEV4dGVuc2lvbgBGZXRjaEV4cHJlc3Npb24AUXVlcnlFeHByZXNzaW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEVudGl0eUNvbGxlY3Rpb24AQXJndW1lbnROdWxsRXhjZXB0aW9uAEN1bHR1cmVJbmZvAFN5c3RlbS5MaW5xAElGb3JtYXRQcm92aWRlcgBJRW51bWVyYXRvcgBHZXRFbnVtZXJhdG9yAC5jdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5JbnRlcm9wU2VydmljZXMAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBEZWJ1Z2dpbmdNb2RlcwBnZXRfRW50aXRpZXMAU3lzdGVtLkFjdGl2aXRpZXMAQ3JlYXRlUHJpY2VMaXN0SXRlbXMAUkFNQ08gV29ya2Zsb3cgQWN0aXZpdGllcy5QbHVnaW5zAFJBTUNPX1dvcmtmbG93X0FjdGl2aXRpZXMuUGx1Z2lucwBTeXN0ZW0uQ29sbGVjdGlvbnMARm9ybWF0AE9iamVjdABnZXRfUHJvZHVjdABzZXRfUHJvZHVjdABHZXQAc2V0X0NvbHVtblNldABGaXJzdE9yRGVmYXVsdABNaWNyb3NvZnQuWHJtLlNkay5DbGllbnQAZ2V0X0N1cnJlbnQATW92ZU5leHQAT3JnYW5pemF0aW9uU2VydmljZUNvbnRleHQAZ2V0X0NybUNvbnRleHQAc2V0X0NybUNvbnRleHQASUV4ZWN1dGlvbkNvbnRleHQASVdvcmtmbG93Q29udGV4dABnZXRfV29ya2Zsb3dDb250ZXh0AHNldF9Xb3JrZmxvd0NvbnRleHQATG9jYWxXb3JrZmxvd0NvbnRleHQAZ2V0X0NvZGVBY3Rpdml0eUNvbnRleHQAc2V0X0NvZGVBY3Rpdml0eUNvbnRleHQAY29kZUFjdGl2aXR5Q29udGV4dABjb250ZXh0AE1pY3Jvc29mdC5Ycm0uU2RrLldvcmtmbG93AEJhc2VXb3JrZmxvdwBBcnJheQBNb25leQBNaWNyb3NvZnQuWHJtLlNkay5RdWVyeQBnZXRfU2VydmljZUZhY3RvcnkAc2V0X1NlcnZpY2VGYWN0b3J5AElPcmdhbml6YXRpb25TZXJ2aWNlRmFjdG9yeQBFbnRpdHkAQ29kZUFjdGl2aXR5AEVtcHR5AAAAAAAvQwBhAGwAbABpAG4AZwAgAEUAeABlAGMAdQB0AGUASQBuAHQAZQByAG4AYQBsAAAdRQB4AGMAZQBwAHQAaQBvAG4AOgAgAHsAMAB9AAAxRQB4AGUAYwB1AHQAZQBJAG4AdABlAHIAbgBhAGwAIABmAGkAbgBpAHMAaABlAGQAAAd1AG8AbQAAC3UAbwBtAGkAZAAAg9kNAAoAIAAgACAAIAAgACAAIAAgADwAZgBlAHQAYwBoACAAdgBlAHIAcwBpAG8AbgA9ACcAMQAuADAAJwAgAG8AdQB0AHAAdQB0AC0AZgBvAHIAbQBhAHQAPQAnAHgAbQBsAC0AcABsAGEAdABmAG8AcgBtACcAIABtAGEAcABwAGkAbgBnAD0AJwBsAG8AZwBpAGMAYQBsACcAIABkAGkAcwB0AGkAbgBjAHQAPQAnAGYAYQBsAHMAZQAnAD4ADQAKACAAIAAgACAAIAAgACAAIAAgACAAPABlAG4AdABpAHQAeQAgAG4AYQBtAGUAPQAnAHAAcgBpAGMAZQBsAGUAdgBlAGwAJwA+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAA8AGEAdAB0AHIAaQBiAHUAdABlACAAbgBhAG0AZQA9ACcAbgBhAG0AZQAnACAALwA+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAA8AGEAdAB0AHIAaQBiAHUAdABlACAAbgBhAG0AZQA9ACcAcwB0AGEAdABlAGMAbwBkAGUAJwAgAC8APgANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAPABhAHQAdAByAGkAYgB1AHQAZQAgAG4AYQBtAGUAPQAnAHAAcgBpAGMAZQBsAGUAdgBlAGwAaQBkACcAIAAvAD4ADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgADwAbwByAGQAZQByACAAYQB0AHQAcgBpAGIAdQB0AGUAPQAnAG4AYQBtAGUAJwAgAGQAZQBzAGMAZQBuAGQAaQBuAGcAPQAnAGYAYQBsAHMAZQAnACAALwA+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAA8AGYAaQBsAHQAZQByACAAdAB5AHAAZQA9ACcAYQBuAGQAJwA+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAPABjAG8AbgBkAGkAdABpAG8AbgAgAGEAdAB0AHIAaQBiAHUAdABlAD0AJwBzAHQAYQB0AGUAYwBvAGQAZQAnACAAbwBwAGUAcgBhAHQAbwByAD0AJwBlAHEAJwAgAHYAYQBsAHUAZQA9ACcAMAAnACAALwA+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAA8AC8AZgBpAGwAdABlAHIAPgANAAoAIAAgACAAIAAgACAAIAAgACAAIAA8AC8AZQBuAHQAaQB0AHkAPgANAAoAIAAgACAAIAAgACAAIAAgADwALwBmAGUAdABjAGgAPgABI3AAcgBvAGQAdQBjAHQAcAByAGkAYwBlAGwAZQB2AGUAbAAAE3AAcgBvAGQAdQBjAHQAaQBkAAAPcAByAG8AZAB1AGMAdAAAGXAAcgBpAGMAZQBsAGUAdgBlAGwAaQBkAAAVcAByAGkAYwBlAGwAZQB2AGUAbAAADWEAbQBvAHUAbgB0AAAnYwBvAGQAZQBB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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+                  "Key": "culture",
+                  "Value": "neutral"
+                },
+                {
+                  "Key": "pluginassemblyid",
+                  "Value": {"$type":"System.Guid","$value":"8cecd5d4-ad12-ed11-9c92-00155d630f03"}
+                },
+                {
+                  "Key": "version",
+                  "Value": "1.0.8249.30464"
                 }
               ],
               "FormattedValues": [],
