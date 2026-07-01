@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseWorkflow.cs" />
+    <Compile Include="DateComparisonActivity.cs" />
     <Compile Include="FindAndReplace.cs" />
     <Compile Include="NumberStringToInt.cs" />
     <Compile Include="IntToString.cs" />
