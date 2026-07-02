@@ -78,6 +78,32 @@
         "Name": "RAMCO Workflow Activities",
         "UniqueName": "RAMCOWorkflowActivities"
       },
+      "Projects": [
+        {
+          "Name": "RAMCO Workflow Activities.Plugins.csproj",
+          "RemoveLinksToFilesThatDoNotExistOnDisk": true,
+          "Files": [
+            {
+              "CrmId": "00000000-0000-0000-0000-000000000000",
+              "FileType": 30,
+              "PluginClassType": 2,
+              "RelativeFilePath": "\\BaseWorkflow.cs"
+            }
+          ],
+          "Properties": [
+            {
+              "PropertiesType": 1,
+              "Config": {
+                "Id": "025bca14-1c27-4194-91ca-423d69ac5488",
+                "IsolationMode": 2,
+                "IsRegisteredInCrm": true,
+                "PathNameOnServer": "RAMCO Workflow Activities.Plugins.dll",
+                "SourceType": 0
+              }
+            }
+          ]
+        }
+      ],
       "Settings": [
         {
           "ChartPath": "\\Charts",
