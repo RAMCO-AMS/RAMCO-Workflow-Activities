@@ -72,7 +72,9 @@
   <ItemGroup>
     <Compile Include="BaseWorkflow.cs" />
     <Compile Include="ConvertWordTemplateToPDF.cs" />
+    <Compile Include="CompareDates.cs" />
     <Compile Include="FindAndReplace.cs" />
+    <Compile Include="GetRecordByGUID.cs" />
     <Compile Include="NumberStringToInt.cs" />
     <Compile Include="IntToString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
