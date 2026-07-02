@@ -46,10 +46,6 @@
     <Reference Include="ILMerge">
       <HintPath>..\..\..\..\..\.nuget\packages\ilmerge\3.0.41\tools\net452\ILMerge.exe</HintPath>
     </Reference>
-    <Reference Include="Aspose.Words">
-      <HintPath>..\Aspose.Words.23.11.0\lib\net461\Aspose.Words.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.Xrm.Sdk">
       <HintPath>..\packages\Microsoft.Xrm.Sdk.2015.7.1.0.1085\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
     </Reference>
@@ -75,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseWorkflow.cs" />
-    <Compile Include="ConvertWordTemplateToPDF.cs" />
     <Compile Include="CompareDates.cs" />
     <Compile Include="FindAndReplace.cs" />
     <Compile Include="GetRecordByGUID.cs" />
