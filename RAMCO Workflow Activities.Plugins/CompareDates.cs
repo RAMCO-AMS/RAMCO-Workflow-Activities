@@ -4,7 +4,6 @@ using System.Linq;
 using System.Activities;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Workflow;
-using Microsoft.Crm.Sdk.Messages;
 using System.Collections.Generic;
 
 namespace RAMCO_Workflow_Activities.Plugin
